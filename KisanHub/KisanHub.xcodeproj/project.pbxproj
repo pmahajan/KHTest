@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9D69D6C21BF79C900267C2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D69D6B21BF79C900267C2E /* Assets.xcassets */; };
+		E9D69D7B21BF7F1600267C2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D7921BF7F1600267C2E /* AppDelegate.swift */; };
+		E9D69D8021BF7F2A00267C2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D7F21BF7F2A00267C2E /* ViewController.swift */; };
+		E9D69D8621BFAE2800267C2E /* ShowWeatherDataVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D8521BFAE2800267C2E /* ShowWeatherDataVCViewController.swift */; };
+		E9D69D8921BFB20A00267C2E /* CommonSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D8821BFB20A00267C2E /* CommonSetting.swift */; };
+		E9D69D8B21BFB64400267C2E /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D8A21BFB64400267C2E /* ErrorMessages.swift */; };
+		E9D69D8D21BFB65900267C2E /* ServiceHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D8C21BFB65900267C2E /* ServiceHeader.swift */; };
+		E9D69D8F21BFB6B500267C2E /* CustomClouser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D8E21BFB6B500267C2E /* CustomClouser.swift */; };
+		E9D69D9121BFB74A00267C2E /* EnumClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D9021BFB74A00267C2E /* EnumClasses.swift */; };
+		E9D69D9421BFB79E00267C2E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D9321BFB79E00267C2E /* Extensions.swift */; };
+		E9D69D9621BFB7CA00267C2E /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D9521BFB7CA00267C2E /* ViewControllerExtensions.swift */; };
+		E9D69D9921BFB93500267C2E /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D9721BFB93500267C2E /* JsonModel.swift */; };
+		E9D69D9A21BFB93500267C2E /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D9821BFB93500267C2E /* BaseModel.swift */; };
+		E9D69D9C21BFB93E00267C2E /* RemoteDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D9B21BFB93E00267C2E /* RemoteDataService.swift */; };
+		E9D69D9E21BFB9BE00267C2E /* ShowWeatherDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D9D21BFB9BE00267C2E /* ShowWeatherDelegateExtension.swift */; };
+		E9D69DA021BFBA1D00267C2E /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69D9F21BFBA1D00267C2E /* Cells.swift */; };
+		E9D69DA221BFBB0200267C2E /* ShowWeatherDataSourceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D69DA121BFBB0200267C2E /* ShowWeatherDataSourceExtension.swift */; };
+		E9D69DA821BFBEDC00267C2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D69DA421BFBEDC00267C2E /* LaunchScreen.storyboard */; };
+		E9D69DA921BFBEDC00267C2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D69DA621BFBEDC00267C2E /* Main.storyboard */; };
+		FFABA80B97075D1784D89006 /* Pods_KisanHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738FD6D23F484E10ABEB17FD /* Pods_KisanHub.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		738FD6D23F484E10ABEB17FD /* Pods_KisanHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KisanHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D5CF25FDFBC0CA709D7F52 /* Pods-KisanHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisanHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KisanHub/Pods-KisanHub.debug.xcconfig"; sourceTree = "<group>"; };
+		D445C3133C0C0DD91BC8C1ED /* Pods-KisanHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KisanHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-KisanHub/Pods-KisanHub.release.xcconfig"; sourceTree = "<group>"; };
+		E9D69D5E21BF79C800267C2E /* KisanHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KisanHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D69D6B21BF79C900267C2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9D69D7021BF79C900267C2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9D69D7921BF7F1600267C2E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9D69D7F21BF7F2A00267C2E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9D69D8521BFAE2800267C2E /* ShowWeatherDataVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowWeatherDataVCViewController.swift; sourceTree = "<group>"; };
+		E9D69D8821BFB20A00267C2E /* CommonSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSetting.swift; sourceTree = "<group>"; };
+		E9D69D8A21BFB64400267C2E /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		E9D69D8C21BFB65900267C2E /* ServiceHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHeader.swift; sourceTree = "<group>"; };
+		E9D69D8E21BFB6B500267C2E /* CustomClouser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClouser.swift; sourceTree = "<group>"; };
+		E9D69D9021BFB74A00267C2E /* EnumClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumClasses.swift; sourceTree = "<group>"; };
+		E9D69D9321BFB79E00267C2E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E9D69D9521BFB7CA00267C2E /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		E9D69D9721BFB93500267C2E /* JsonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
+		E9D69D9821BFB93500267C2E /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		E9D69D9B21BFB93E00267C2E /* RemoteDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataService.swift; sourceTree = "<group>"; };
+		E9D69D9D21BFB9BE00267C2E /* ShowWeatherDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowWeatherDelegateExtension.swift; sourceTree = "<group>"; };
+		E9D69D9F21BFBA1D00267C2E /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		E9D69DA121BFBB0200267C2E /* ShowWeatherDataSourceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowWeatherDataSourceExtension.swift; sourceTree = "<group>"; };
+		E9D69DA521BFBEDC00267C2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9D69DA721BFBEDC00267C2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9D69D5B21BF79C800267C2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFABA80B97075D1784D89006 /* Pods_KisanHub.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E437A7AEA9AE4D410090CA2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80D5CF25FDFBC0CA709D7F52 /* Pods-KisanHub.debug.xcconfig */,
+				D445C3133C0C0DD91BC8C1ED /* Pods-KisanHub.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9D69D5521BF79C800267C2E = {
+			isa = PBXGroup;
+			children = (
+				E9D69D6021BF79C800267C2E /* KisanHub */,
+				E9D69D5F21BF79C800267C2E /* Products */,
+				E437A7AEA9AE4D410090CA2A /* Pods */,
+				FE6EEE8A6CE9C69A8DEB2460 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9D69D5F21BF79C800267C2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9D69D5E21BF79C800267C2E /* KisanHub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9D69D6021BF79C800267C2E /* KisanHub */ = {
+			isa = PBXGroup;
+			children = (
+				E9D69DA321BFBEDC00267C2E /* Storyboard */,
+				E9D69D9221BFB79E00267C2E /* View */,
+				E9D69D8721BFB09400267C2E /* Helper */,
+				E9D69D7C21BF7F2A00267C2E /* Model */,
+				E9D69D7D21BF7F2A00267C2E /* Services */,
+				E9D69D7E21BF7F2A00267C2E /* ViewController */,
+				E9D69D7821BF7F1600267C2E /* AppDelegate */,
+				E9D69D6B21BF79C900267C2E /* Assets.xcassets */,
+				E9D69D7021BF79C900267C2E /* Info.plist */,
+			);
+			path = KisanHub;
+			sourceTree = "<group>";
+		};
+		E9D69D7821BF7F1600267C2E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E9D69D7921BF7F1600267C2E /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E9D69D7C21BF7F2A00267C2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9D69D9821BFB93500267C2E /* BaseModel.swift */,
+				E9D69D9721BFB93500267C2E /* JsonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9D69D7D21BF7F2A00267C2E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E9D69D9B21BFB93E00267C2E /* RemoteDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E9D69D7E21BF7F2A00267C2E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9D69D7F21BF7F2A00267C2E /* ViewController.swift */,
+				E9D69D8521BFAE2800267C2E /* ShowWeatherDataVCViewController.swift */,
+				E9D69DA121BFBB0200267C2E /* ShowWeatherDataSourceExtension.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E9D69D8721BFB09400267C2E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E9D69D9021BFB74A00267C2E /* EnumClasses.swift */,
+				E9D69D8821BFB20A00267C2E /* CommonSetting.swift */,
+				E9D69D8A21BFB64400267C2E /* ErrorMessages.swift */,
+				E9D69D8C21BFB65900267C2E /* ServiceHeader.swift */,
+				E9D69D8E21BFB6B500267C2E /* CustomClouser.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E9D69D9221BFB79E00267C2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9D69D9F21BFBA1D00267C2E /* Cells.swift */,
+				E9D69D9321BFB79E00267C2E /* Extensions.swift */,
+				E9D69D9521BFB7CA00267C2E /* ViewControllerExtensions.swift */,
+				E9D69D9D21BFB9BE00267C2E /* ShowWeatherDelegateExtension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9D69DA321BFBEDC00267C2E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E9D69DA421BFBEDC00267C2E /* LaunchScreen.storyboard */,
+				E9D69DA621BFBEDC00267C2E /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FE6EEE8A6CE9C69A8DEB2460 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				738FD6D23F484E10ABEB17FD /* Pods_KisanHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9D69D5D21BF79C800267C2E /* KisanHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D69D7321BF79C900267C2E /* Build configuration list for PBXNativeTarget "KisanHub" */;
+			buildPhases = (
+				4192A1A76245619E14501E06 /* [CP] Check Pods Manifest.lock */,
+				E9D69D5A21BF79C800267C2E /* Sources */,
+				E9D69D5B21BF79C800267C2E /* Frameworks */,
+				E9D69D5C21BF79C800267C2E /* Resources */,
+				715B222A61DD8A9EF56E3D18 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KisanHub;
+			productName = KisanHub;
+			productReference = E9D69D5E21BF79C800267C2E /* KisanHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9D69D5621BF79C800267C2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = prafulmahajan;
+				TargetAttributes = {
+					E9D69D5D21BF79C800267C2E = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = E9D69D5921BF79C800267C2E /* Build configuration list for PBXProject "KisanHub" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9D69D5521BF79C800267C2E;
+			productRefGroup = E9D69D5F21BF79C800267C2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9D69D5D21BF79C800267C2E /* KisanHub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9D69D5C21BF79C800267C2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D69DA921BFBEDC00267C2E /* Main.storyboard in Resources */,
+				E9D69D6C21BF79C900267C2E /* Assets.xcassets in Resources */,
+				E9D69DA821BFBEDC00267C2E /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4192A1A76245619E14501E06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KisanHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		715B222A61DD8A9EF56E3D18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KisanHub/Pods-KisanHub-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SpreadsheetView/SpreadsheetView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpreadsheetView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KisanHub/Pods-KisanHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9D69D5A21BF79C800267C2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D69D9621BFB7CA00267C2E /* ViewControllerExtensions.swift in Sources */,
+				E9D69D8B21BFB64400267C2E /* ErrorMessages.swift in Sources */,
+				E9D69D8021BF7F2A00267C2E /* ViewController.swift in Sources */,
+				E9D69D9A21BFB93500267C2E /* BaseModel.swift in Sources */,
+				E9D69D9E21BFB9BE00267C2E /* ShowWeatherDelegateExtension.swift in Sources */,
+				E9D69D8F21BFB6B500267C2E /* CustomClouser.swift in Sources */,
+				E9D69D7B21BF7F1600267C2E /* AppDelegate.swift in Sources */,
+				E9D69D9421BFB79E00267C2E /* Extensions.swift in Sources */,
+				E9D69DA021BFBA1D00267C2E /* Cells.swift in Sources */,
+				E9D69D8D21BFB65900267C2E /* ServiceHeader.swift in Sources */,
+				E9D69D9121BFB74A00267C2E /* EnumClasses.swift in Sources */,
+				E9D69D9921BFB93500267C2E /* JsonModel.swift in Sources */,
+				E9D69D9C21BFB93E00267C2E /* RemoteDataService.swift in Sources */,
+				E9D69D8621BFAE2800267C2E /* ShowWeatherDataVCViewController.swift in Sources */,
+				E9D69D8921BFB20A00267C2E /* CommonSetting.swift in Sources */,
+				E9D69DA221BFBB0200267C2E /* ShowWeatherDataSourceExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9D69DA421BFBEDC00267C2E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9D69DA521BFBEDC00267C2E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E9D69DA621BFBEDC00267C2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9D69DA721BFBEDC00267C2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9D69D7121BF79C900267C2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9D69D7221BF79C900267C2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9D69D7421BF79C900267C2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D5CF25FDFBC0CA709D7F52 /* Pods-KisanHub.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KisanHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prafulmahajan.KisanHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9D69D7521BF79C900267C2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D445C3133C0C0DD91BC8C1ED /* Pods-KisanHub.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KisanHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prafulmahajan.KisanHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9D69D5921BF79C800267C2E /* Build configuration list for PBXProject "KisanHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D69D7121BF79C900267C2E /* Debug */,
+				E9D69D7221BF79C900267C2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D69D7321BF79C900267C2E /* Build configuration list for PBXNativeTarget "KisanHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D69D7421BF79C900267C2E /* Debug */,
+				E9D69D7521BF79C900267C2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9D69D5621BF79C800267C2E /* Project object */;
+}

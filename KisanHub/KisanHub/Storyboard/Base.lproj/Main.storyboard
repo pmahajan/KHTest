@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wK4-Qc-Frl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Selection Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KisanHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Metric" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Xt-el-11C" customClass="CustomTextField" customModule="KisanHub" customModuleProvider="target">
+                                <rect key="frame" x="16" y="144" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mee-yN-IEZ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Dr-5z-aWh" customClass="CustomTextField" customModule="KisanHub" customModuleProvider="target">
+                                <rect key="frame" x="16" y="214" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JGB-0P-uy6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shu-AA-sbp">
+                                <rect key="frame" x="16" y="294" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Spq-wT-gJk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getTheMonthalyWeatherData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ki-gk-XKs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Shu-AA-sbp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2RV-9k-JOa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Dr-5z-aWh" secondAttribute="trailing" constant="16" id="88a-fy-BvK"/>
+                            <constraint firstItem="2Xt-el-11C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="ATK-C8-T1J"/>
+                            <constraint firstItem="2Dr-5z-aWh" firstAttribute="top" secondItem="2Xt-el-11C" secondAttribute="bottom" constant="30" id="RWT-95-48H"/>
+                            <constraint firstItem="Shu-AA-sbp" firstAttribute="top" secondItem="2Dr-5z-aWh" secondAttribute="bottom" constant="40" id="Srm-r7-AS5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Xt-el-11C" secondAttribute="trailing" constant="16" id="b79-e2-hT1"/>
+                            <constraint firstItem="2Xt-el-11C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hgx-3k-5fq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Shu-AA-sbp" secondAttribute="trailing" constant="16" id="lm4-Cn-yZv"/>
+                            <constraint firstItem="2Dr-5z-aWh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pub-YE-sQH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Selection Screen" id="V3e-Tz-6Ev"/>
+                    <connections>
+                        <outlet property="locationTxtField" destination="2Dr-5z-aWh" id="SeX-P1-OvV"/>
+                        <outlet property="metricTxtField" destination="2Xt-el-11C" id="CRf-pt-Zvb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666" y="-62"/>
+        </scene>
+        <!--Show Weather DataVC View Controller-->
+        <scene sceneID="g5k-zC-Ttb">
+            <objects>
+                <viewController storyboardIdentifier="ShowWeatherDataVCViewController" id="a7c-Z8-hyc" customClass="ShowWeatherDataVCViewController" customModule="KisanHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9AX-mR-mLH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2e-Dg-9Dd" customClass="SpreadsheetView" customModule="SpreadsheetView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O2e-Dg-9Dd" firstAttribute="top" secondItem="llw-e7-ajh" secondAttribute="top" id="EZz-G3-2vl"/>
+                            <constraint firstItem="llw-e7-ajh" firstAttribute="bottom" secondItem="O2e-Dg-9Dd" secondAttribute="bottom" id="Vfs-1z-wus"/>
+                            <constraint firstItem="O2e-Dg-9Dd" firstAttribute="leading" secondItem="llw-e7-ajh" secondAttribute="leading" id="bwD-GF-eLW"/>
+                            <constraint firstItem="llw-e7-ajh" firstAttribute="trailing" secondItem="O2e-Dg-9Dd" secondAttribute="trailing" id="nDo-iy-Iho"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="llw-e7-ajh"/>
+                    </view>
+                    <connections>
+                        <outlet property="spreadsheetView" destination="O2e-Dg-9Dd" id="iYk-Tc-dq9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qf6-8a-EHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1338" y="-70"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5UJ-lp-wiR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wK4-Qc-Frl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="svG-PZ-ruc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MkN-kz-RhM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f45-iG-leX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="-62"/>
+        </scene>
+    </scenes>
+</document>
